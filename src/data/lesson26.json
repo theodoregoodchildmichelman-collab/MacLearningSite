@@ -1,0 +1,192 @@
+{
+    "lessonModule": {
+        "id": "lesson_26",
+        "title": "Chapter 26: Technology",
+        "subtitle": "Во светот на интернетот",
+        "proficiencyLevel": "Intermediate",
+        "theme": "Modern Technology & Youth Slang",
+        "intro": "Добредојдовте во првата лекција! Денес ќе научиме зборови за технологија и како да ги користиме во секојдневниот живот.",
+        "sections": [
+            {
+                "type": "vocabulary_grid",
+                "title": "Технологија (Technology)",
+                "instruction": "Listen and repeat. Notice how Allie and Toyen use these devices.",
+                "story": "Сабота е во Неготино. Времето е сончево. Една голема група пријатели е во центарот на градот, во едно кафуле. Тие се млади и сакаат <span class='bg-blue-100 text-blue-800 px-1 rounded'>технологија</span>. Али и Тојен седат на маса. Али има нов лаптоп. Таа гледа во светлиот <span class='bg-yellow-100 text-yellow-800 px-1 rounded'>екран</span>. Таа брзо пишува на <span class='bg-green-100 text-green-800 px-1 rounded'>тастатурата</span>. Тојен седи до неа и го користи малото <span class='bg-purple-100 text-purple-800 px-1 rounded'>глувче</span>. Одеднаш, Даниел кажува: „Ох, не! Мојот телефон е празен.“ Елизабет прашува: „Дали <span class='bg-red-100 text-red-800 px-1 rounded'>батеријата</span> е проблем?“ „Да,“ кажува Даниел. „Ми треба <span class='bg-orange-100 text-orange-800 px-1 rounded'>полнач</span>.“ Елен има <span class='bg-orange-100 text-orange-800 px-1 rounded'>полнач</span> во чантата и го дава на Даниел. На другата маса, Кејти и Сара сакаат да гледаат филм. Тие ставаат големи <span class='bg-pink-100 text-pink-800 px-1 rounded'>слушалки</span> на ушите. Но, Лора гледа во својот телефон и кажува: „Тука нема добра <span class='bg-indigo-100 text-indigo-800 px-1 rounded'>мрежа</span>.“ Стефани оди кај келнерот. Таа прашува: „Извинете, која е <span class='bg-teal-100 text-teal-800 px-1 rounded'>лозинката</span> за интернетот?“ Келнерот ја кажува <span class='bg-teal-100 text-teal-800 px-1 rounded'>лозинката</span>. Џозеф ја пишува <span class='bg-teal-100 text-teal-800 px-1 rounded'>лозинката</span> во телефонот. „Супер! Сега имаме брз <span class='bg-cyan-100 text-cyan-800 px-1 rounded'>вај-фај</span>,“ кажува Џозеф. Тео и Кристијан се смеат. Сега сите пријатели во Неготино се среќни и онлајн.",
+                "items": [
+                    {
+                        "mk": "Екран",
+                        "en": "Screen",
+                        "phonetic": "Ek-ran",
+                        "icon": "device-tablet"
+                    },
+                    {
+                        "mk": "Тастатура",
+                        "en": "Keyboard",
+                        "phonetic": "Tas-ta-too-ra",
+                        "icon": "keyboard"
+                    },
+                    {
+                        "mk": "Глувче",
+                        "en": "Mouse",
+                        "phonetic": "Gloov-che",
+                        "icon": "mouse"
+                    },
+                    {
+                        "mk": "Батерија",
+                        "en": "Battery",
+                        "phonetic": "Ba-te-ree-ya",
+                        "icon": "battery-full"
+                    },
+                    {
+                        "mk": "Полнач",
+                        "en": "Charger",
+                        "phonetic": "Pol-nach",
+                        "icon": "plug"
+                    },
+                    {
+                        "mk": "Слушалки",
+                        "en": "Headphones",
+                        "phonetic": "Sloo-shal-kee",
+                        "icon": "headphones"
+                    },
+                    {
+                        "mk": "Мрежа",
+                        "en": "Network/Signal",
+                        "phonetic": "Mre-zha",
+                        "icon": "wifi"
+                    },
+                    {
+                        "mk": "Лозинка",
+                        "en": "Password",
+                        "phonetic": "Lo-zeen-ka",
+                        "icon": "lock"
+                    },
+                    {
+                        "mk": "Вај-фај",
+                        "en": "Wi-Fi",
+                        "phonetic": "Wi-Fi",
+                        "icon": "wifi"
+                    }
+                ],
+                "tip": "Useful Phrase: 'На Елен и падна батеријата' (Ellen's battery died)."
+            },
+            {
+                "type": "verb_conjugation",
+                "title": "Tech Verbs",
+                "instruction": "See how the group uses these verbs.",
+                "verbs": [
+                    {
+                        "mk": "Скрола",
+                        "en": "To scroll",
+                        "example": "Даниел скрола на Инстаграм цел ден."
+                    },
+                    {
+                        "mk": "Лајкува",
+                        "en": "To like",
+                        "example": "Елизабет и Елен ги лајкуваат сликите."
+                    },
+                    {
+                        "mk": "Тагира",
+                        "en": "To tag",
+                        "example": "Кејти ја тагира Сара во постот."
+                    },
+                    {
+                        "mk": "Блокира",
+                        "en": "To block",
+                        "example": "Лаура го блокира хејтерот."
+                    }
+                ]
+            },
+            {
+                "type": "slang_cards",
+                "title": "Уличен Сленг (Street Slang)",
+                "instruction": "Flip the card to see how Stephanie, Christian, and Joseph speak.",
+                "cards": [
+                    {
+                        "term": "Топ",
+                        "meaning": "Excellent/Great",
+                        "context": "Positive",
+                        "example": "Журката кај Стефани е топ!"
+                    },
+                    {
+                        "term": "Закон",
+                        "meaning": "Awesome (Lit: Law)",
+                        "context": "Positive",
+                        "example": "Кристијан е закон дечко."
+                    },
+                    {
+                        "term": "Лабаво",
+                        "meaning": "Chill/Relaxed",
+                        "context": "Chill",
+                        "example": "Џозеф пие кафе, лабаво."
+                    },
+                    {
+                        "term": "Крш",
+                        "meaning": "Trash/Broken",
+                        "context": "Negative",
+                        "example": "Телефонот на Тео е крш."
+                    },
+                    {
+                        "term": "Хаос",
+                        "meaning": "Mess/Chaos",
+                        "context": "Negative",
+                        "example": "Кај Сара во соба е хаос."
+                    },
+                    {
+                        "term": "Фаца",
+                        "meaning": "Cool person",
+                        "context": "Social",
+                        "example": "Даниел мисли дека е голема фаца."
+                    }
+                ]
+            },
+            {
+                "type": "interactive_scenario",
+                "title": "At the Café with the Crew",
+                "instruction": "Allie and Toyen are chatting. Fill in the missing slang words.",
+                "context": "Allie and Toyen are sitting at a café. They are looking at phones.",
+                "dialogueLines": [
+                    {
+                        "speaker": "Allie",
+                        "text": "Еј Тојен, дали го виде новото стори на Даниел?"
+                    },
+                    {
+                        "speaker": "Toyen",
+                        "text": "Не, не видов. Дали е со Елизабет?"
+                    },
+                    {
+                        "speaker": "Allie",
+                        "text": "Не! Тој е со Елен и Кејти во Охрид. Видеото е {blank}!",
+                        "answer": "закон"
+                    },
+                    {
+                        "speaker": "Toyen",
+                        "text": "Леле, Сара ми кажа дека и Лаура е таму."
+                    },
+                    {
+                        "speaker": "Allie",
+                        "text": "Чекај да видам... Оф, екранот ми е {blank}, а и интернетот на Стефани е {blank}.",
+                        "answers": [
+                            "крш",
+                            "катастрофа"
+                        ]
+                    },
+                    {
+                        "speaker": "Toyen",
+                        "text": "Не се нервирај Али, {blank}. Имаат ли вај-фај тука?",
+                        "answer": "лабаво"
+                    },
+                    {
+                        "speaker": "Allie",
+                        "text": "Имаат, ама Кристијан и Џозеф не ја знаат {blank}.",
+                        "answer": "лозинката"
+                    },
+                    {
+                        "speaker": "Toyen",
+                        "text": "Ајде ќе го прашаме Тео. Тој секогаш има интернет."
+                    }
+                ]
+            }
+        ]
+    }
+}
