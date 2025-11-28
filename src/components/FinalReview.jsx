@@ -63,4 +63,3 @@ const FlipCard = ({ item, index }) => {
 };
 
 export default FinalReview;
-a
