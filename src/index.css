@@ -3,19 +3,95 @@
 @tailwind utilities;
 
 @layer utilities {
-  .perspective-1000 { perspective: 1000px; }
-  .transform-style-3d { transform-style: preserve-3d; }
-  .backface-hidden { backface-visibility: hidden; }
-  .rotate-y-180 { transform: rotateY(180deg); }
-  
-  .scrollbar-hide::-webkit-scrollbar {
-      display: none;
+  .perspective-1000 {
+    perspective: 1000px;
   }
+
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
   .scrollbar-hide {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 
-body { font-family: 'Inter', sans-serif; }
-.cyrillic { font-family: 'Noto Sans', sans-serif; }
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #FAFAFA;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+.cyrillic {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* Ambient Background Mesh */
+.ambient-light {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 214, 10, 0.15) 0%, rgba(250, 250, 250, 0) 70%);
+  top: -200px;
+  left: -100px;
+  z-index: -1;
+  filter: blur(60px);
+  animation: float 10s infinite ease-in-out;
+}
+
+.ambient-light-2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(220, 38, 38, 0.08) 0%, rgba(250, 250, 250, 0) 70%);
+  top: 20%;
+  right: -150px;
+  z-index: -1;
+  filter: blur(80px);
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(20px, 40px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Glassmorphism Header */
+.glass-header {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+/* Modern Card Interactions */
+.bento-card {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.05);
+}
