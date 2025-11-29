@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, BookOpen, MessageCircle, Lock, Check } from 'lucide-react';
+import { Play, BookOpen, MessageCircle, Lock, Check, Smartphone } from 'lucide-react';
 
 const Dashboard = ({ onStartLesson }) => {
     return (
@@ -63,7 +63,7 @@ const Dashboard = ({ onStartLesson }) => {
                                 onClick={onStartLesson}
                                 className="bg-black text-white px-8 py-4 rounded-2xl font-semibold hover:bg-gray-800 transition-all hover:scale-[1.02] active:scale-[0.98]"
                             >
-                                Start Chapter 1
+                                Start Chapter 26
                             </button>
                             <button className="px-8 py-4 rounded-2xl font-semibold text-gray-600 hover:bg-gray-100 transition-all">
                                 View Roadmap
@@ -119,22 +119,22 @@ const Dashboard = ({ onStartLesson }) => {
                 <div className="grid md:grid-cols-3 gap-6">
                     <div className="bento-card bg-white rounded-3xl p-8 border border-gray-100 shadow-sm relative overflow-hidden group">
                         <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <Play className="w-24 h-24 text-yellow-500" />
+                            <Smartphone className="w-24 h-24 text-blue-500" />
                         </div>
-                        <span className="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full mb-4">In Progress</span>
-                        <h3 className="text-xl font-bold mb-2">Introduction</h3>
-                        <p className="text-sm text-gray-500 mb-6">Basics of Cyrillic and greetings.</p>
+                        <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full mb-4">New</span>
+                        <h3 className="text-xl font-bold mb-2">Chapter 26: Technology</h3>
+                        <p className="text-sm text-gray-500 mb-6">Internet, social media, and slang.</p>
                         <div className="flex items-center justify-between mt-auto">
-                            <span className="text-xs font-bold text-gray-400">85% Complete</span>
+                            <span className="text-xs font-bold text-gray-400">0% Complete</span>
                             <button
                                 onClick={onStartLesson}
-                                className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-yellow-500 hover:text-black transition-colors"
+                                className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-blue-500 hover:text-white transition-colors"
                             >
                                 <Play className="w-4 h-4 ml-0.5" />
                             </button>
                         </div>
                         <div className="absolute bottom-0 left-0 w-full h-1 bg-gray-100">
-                            <div className="h-full bg-black w-[85%]"></div>
+                            <div className="h-full bg-blue-500 w-[0%]"></div>
                         </div>
                     </div>
 

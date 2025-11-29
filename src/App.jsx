@@ -10,15 +10,7 @@ function App() {
   return (
     <UserProvider>
       <Layout>
-        <div className="fixed bottom-0 left-0 bg-red-600 text-white z-[100] px-4 py-2 font-bold shadow-lg flex items-center gap-4 rounded-tr-lg">
-          <span>DEBUG: UI OVERHAUL V2 ACTIVE</span>
-          <button
-            onClick={() => setCurrentView('dashboard')}
-            className="bg-white text-red-600 px-2 py-0.5 rounded text-xs hover:bg-red-50"
-          >
-            RESET TO DASHBOARD
-          </button>
-        </div>
+
         {currentView === 'dashboard' && (
           <Dashboard onStartLesson={() => setCurrentView('lesson')} />
         )}
