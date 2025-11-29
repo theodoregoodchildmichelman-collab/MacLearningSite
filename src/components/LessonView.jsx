@@ -7,6 +7,7 @@ import TechVerbs from './TechVerbs';
 import SlangCards from './SlangCards';
 import InteractiveScenario from './InteractiveScenario';
 import FinalReview from './FinalReview';
+import InteractiveVocabularyScript from './InteractiveVocabularyScript';
 
 const LessonView = ({ onBack }) => {
     const { lessonModule } = lessonData;
@@ -27,6 +28,8 @@ const LessonView = ({ onBack }) => {
 
     const renderSection = () => {
         switch (currentSection.type) {
+            case 'interactive_vocabulary_script':
+                return <InteractiveVocabularyScript onNext={handleNext} />;
             case 'vocabulary_grid':
                 return <VocabularyGrid data={currentSection} onNext={handleNext} lessonIntro={lessonModule.intro} />;
             case 'verb_conjugation':
