@@ -1,12 +1,12 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBnMRzyU23h5NvfcuXs1CRkO9ignFZI030",
-    authDomain: "maclearningproject.firebaseapp.com",
-    projectId: "maclearningproject",
-    storageBucket: "maclearningproject.firebasestorage.app",
-    messagingSenderId: "492614817138",
-    appId: "1:492614817138:web:7fe535240cae5e4ea379eb"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
