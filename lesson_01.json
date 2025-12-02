@@ -1,0 +1,195 @@
+{
+    "lesson_meta": {
+        "id": 1,
+        "title_mk": "ЈАС СУМ ОД МАКЕДОНИЈА, ТИ СИ ОД АМЕРИКА",
+        "title_en": "I am from Macedonia, you are from America",
+        "page_start": 6
+    },
+    "dialogues": [
+        {
+            "title": "Main Dialogue",
+            "lines": [
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "коцката (ЈАС, ТИ, ТОЈ...);  Б: коцката (СУМ, СИ, Е...) и кажете реченица!",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "ЈАС...",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker B",
+                    "mk_text": "Јас СУМ Маја.",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "ТИ...",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker B",
+                    "mk_text": "Ти си од Македонија.",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "Добро утро!",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker B",
+                    "mk_text": "_______ _____!",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "Како _____?",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker B",
+                    "mk_text": "Добро. А ____?",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "Добро. Јас _____ Ана, а таа ___ Лидија. А ______?",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker B",
+                    "mk_text": "____ сум Марк, а ______ е Филип.",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "Ние ____ од Македонија. А _______?",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker B",
+                    "mk_text": "_____ сме од Америка.",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "Мило ми е!",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker B",
+                    "mk_text": "Мило ми е!",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker B",
+                    "mk_text": "Каролина е од Македонија. Таа не е Американка, таа е",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker B",
+                    "mk_text": "Мило ми е.",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "Мило ми е.",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "Ова е Гоце.",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker B",
+                    "mk_text": "Што е тој по",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "Тој е професор по",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "Ова е Радмила.",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker B",
+                    "mk_text": "Што е таа по",
+                    "en_translation": ""
+                },
+                {
+                    "speaker": "Speaker A",
+                    "mk_text": "Таа е професорка по",
+                    "en_translation": ""
+                }
+            ]
+        }
+    ],
+    "vocabulary": [
+        {
+            "mk_word": "Македонец",
+            "en_definition": "Macedonian (male)",
+            "part_of_speech": "noun",
+            "gender": "m",
+            "plural_form": "Македонци"
+        },
+        {
+            "mk_word": "Македонка",
+            "en_definition": "Macedonian (female)",
+            "part_of_speech": "noun",
+            "gender": "f",
+            "plural_form": "Македонки"
+        },
+        {
+            "mk_word": "Американец",
+            "en_definition": "American (male)",
+            "part_of_speech": "noun",
+            "gender": "m",
+            "plural_form": "Американци"
+        },
+        {
+            "mk_word": "Американка",
+            "en_definition": "American (female)",
+            "part_of_speech": "noun",
+            "gender": "f",
+            "plural_form": "Американки"
+        },
+        {
+            "mk_word": "Албанец",
+            "en_definition": "Albanian (male)",
+            "part_of_speech": "noun",
+            "gender": "m",
+            "plural_form": "Албанци"
+        },
+        {
+            "mk_word": "Албанка",
+            "en_definition": "Albanian (female)",
+            "part_of_speech": "noun",
+            "gender": "f",
+            "plural_form": "Албанки"
+        }
+    ],
+    "grammar_notes": [
+        {
+            "topic": "The verb 'to be' (сум)",
+            "explanation_markdown": "\n**Conjugation of 'сум' (to be):**\n\n| Pronoun | Verb | English |\n|---------|------|---------|\n| Јас     | сум  | I am    |\n| Ти      | си   | You are |\n| Тој/Таа | е    | He/She is |\n| Ние     | сме  | We are  |\n| Вие     | сте  | You are |\n| Тие     | се   | They are |\n            ",
+            "examples": [
+                {
+                    "mk": "Јас сум Ана.",
+                    "en": "I am Ana."
+                },
+                {
+                    "mk": "Ти си од Америка.",
+                    "en": "You are from America."
+                }
+            ]
+        }
+    ]
+}

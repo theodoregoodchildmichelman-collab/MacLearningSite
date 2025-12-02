@@ -1,0 +1,108 @@
+{
+    "lesson_meta": {
+        "id": 3,
+        "title_mk": "ХРАНА",
+        "title_en": "Food",
+        "page_start": 15
+    },
+    "dialogues": [],
+    "vocabulary": [
+        {
+            "mk_word": "Хамбургер",
+            "en_definition": "Hamburger",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/хамбургер.jpg"
+        },
+        {
+            "mk_word": "Леб",
+            "en_definition": "Bread",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/леб.jpg"
+        },
+        {
+            "mk_word": "Чај",
+            "en_definition": "Tea",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/чај.jpg"
+        },
+        {
+            "mk_word": "Кафе",
+            "en_definition": "Coffee",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/кафе.jpg"
+        },
+        {
+            "mk_word": "Кока-Кола",
+            "en_definition": "Coca-Cola",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/кока_кола.jpg"
+        },
+        {
+            "mk_word": "Салата",
+            "en_definition": "Salad",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/салата.jpg"
+        },
+        {
+            "mk_word": "Супа",
+            "en_definition": "Soup",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/супа.jpg"
+        },
+        {
+            "mk_word": "Вода",
+            "en_definition": "Water",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/вода.jpg"
+        },
+        {
+            "mk_word": "Сендвич",
+            "en_definition": "Sandwich",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/сендвич.jpg"
+        },
+        {
+            "mk_word": "Појадок",
+            "en_definition": "Breakfast",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/појадок.jpg"
+        },
+        {
+            "mk_word": "Ручек",
+            "en_definition": "Lunch",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/ручек.jpg"
+        },
+        {
+            "mk_word": "Вечера",
+            "en_definition": "Dinner",
+            "part_of_speech": "noun",
+            "gender": null,
+            "plural_form": "",
+            "image_ref": "images/lesson_03/вечера.jpg"
+        }
+    ],
+    "grammar_notes": []
+}

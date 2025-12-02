@@ -1,39 +1,52 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer utilities {
-  .perspective-1000 {
-    perspective: 1000px;
-  }
+@theme {
+  --color-primary: #2563EB;
+  --color-background: #F9FAFB;
+  --radius-card: 24px;
+  --radius-pill: 9999px;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
 
-  .transform-style-3d {
-    transform-style: preserve-3d;
-  }
+@utility perspective-1000 {
+  perspective: 1000px;
+}
 
-  .backface-hidden {
-    backface-visibility: hidden;
-  }
+@utility transform-style-3d {
+  transform-style: preserve-3d;
+}
 
-  .rotate-y-180 {
-    transform: rotateY(180deg);
-  }
+@utility backface-hidden {
+  backface-visibility: hidden;
+}
 
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
+@utility rotate-y-180 {
+  transform: rotateY(180deg);
+}
 
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@utility scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: #FAFAFA;
+  font-family: var(--font-sans);
+  background-color: #fbfdfc;
   color: #1a1a1a;
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.025em;
 }
 
 .cyrillic {
@@ -88,10 +101,42 @@ body {
 
 /* Modern Card Interactions */
 .bento-card {
+  background-color: white;
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  /* Faint semi-transparent border */
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.05);
+  /* Subtle soft drop shadow */
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .bento-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.08);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
 }

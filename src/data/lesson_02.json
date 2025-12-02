@@ -1,0 +1,47 @@
+{
+    "lesson_meta": {
+        "id": 2,
+        "title_mk": "ШТО СТЕ ПО ПРОФЕСИЈА?",
+        "title_en": "What is your profession?",
+        "page_start": 11
+    },
+    "dialogues": [],
+    "vocabulary": [
+        {
+            "mk_word": "Професор (m) / Професорка (f)",
+            "en_definition": "Professor",
+            "part_of_speech": "noun",
+            "gender": "m/f",
+            "plural_form": "Професори"
+        },
+        {
+            "mk_word": "Волонтер (m) / Волонтерка (f)",
+            "en_definition": "Volunteer",
+            "part_of_speech": "noun",
+            "gender": "m/f",
+            "plural_form": "Волонтери"
+        },
+        {
+            "mk_word": "Македонец (m) / Македонка (f)",
+            "en_definition": "Macedonian (person)",
+            "part_of_speech": "noun",
+            "gender": "m/f",
+            "plural_form": "Македонеци"
+        },
+        {
+            "mk_word": "Американец (m) / Американка (f)",
+            "en_definition": "American (person)",
+            "part_of_speech": "noun",
+            "gender": "m/f",
+            "plural_form": "Американеци"
+        },
+        {
+            "mk_word": "Специјален едукатор (m) / Специјален едукатор (f)",
+            "en_definition": "Special Educator",
+            "part_of_speech": "noun",
+            "gender": "m/f",
+            "plural_form": "Специјален едукатори"
+        }
+    ],
+    "grammar_notes": []
+}

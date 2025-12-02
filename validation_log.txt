@@ -1,0 +1,14 @@
+Starting validation...
+Schema schema.json loaded successfully.
+
+Validating lesson_01.json...
+  Structure: OK
+  OCR Check: OK
+
+Validating lesson_02.json...
+ERROR: File lesson_02.json not found in root or corpus/.
+
+Validating lesson_03.json...
+ERROR: File lesson_03.json not found in root or corpus/.
+
+Validation complete.

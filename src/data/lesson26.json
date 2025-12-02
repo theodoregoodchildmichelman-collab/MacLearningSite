@@ -1,8 +1,8 @@
 {
     "lessonModule": {
         "id": "lesson_26",
-        "title": "Chapter 26: Technology",
-        "subtitle": "Во светот на интернетот",
+        "title": "Dirty Macedonian Words and Phrases",
+        "subtitle": "Slang in Skopje with Christian and Joseph",
         "proficiencyLevel": "Intermediate",
         "theme": "Modern Technology & Youth Slang",
         "intro": "Добредојдовте во првата лекција! Денес ќе научиме зборови за технологија и како да ги користиме во секојдневниот живот.",
@@ -13,119 +13,69 @@
                 "instruction": "Explore the vocabulary and story below."
             },
             {
-                "type": "verb_conjugation",
-                "title": "Tech Verbs",
-                "instruction": "See how the group uses these verbs.",
-                "verbs": [
-                    {
-                        "mk": "Скрола",
-                        "en": "To scroll",
-                        "example": "Даниел скрола на Инстаграм цел ден."
-                    },
-                    {
-                        "mk": "Лајкува",
-                        "en": "To like",
-                        "example": "Елизабет и Елен ги лајкуваат сликите."
-                    },
-                    {
-                        "mk": "Тагира",
-                        "en": "To tag",
-                        "example": "Кејти ја тагира Сара во постот."
-                    },
-                    {
-                        "mk": "Блокира",
-                        "en": "To block",
-                        "example": "Лаура го блокира хејтерот."
-                    }
-                ]
-            },
-            {
                 "type": "slang_cards",
-                "title": "Уличен Сленг (Street Slang)",
-                "instruction": "Flip the card to see how Stephanie, Christian, and Joseph speak.",
+                "title": "Dirty Macedonian Words and Phrases",
+                "instruction": "Click the bubbles to see the definitions.",
                 "cards": [
                     {
-                        "term": "Топ",
-                        "meaning": "Excellent/Great",
-                        "context": "Positive",
-                        "example": "Журката кај Стефани е топ!"
+                        "term": "Кур (Kur)",
+                        "definition": "Literally means 'dick.' Commonly used as a vulgar negation meaning 'No way,' 'Zero,' or 'Not a chance.'",
+                        "example": "Тео: \"ЛПИ тестот е лесен за мене.\" Кристијан: \"Кур мој, Тео.\"",
+                        "english": "Theo: \"The LPI test is easy for me.\" Kristijan: \"No way [lit: My dick], Theo.\""
                     },
                     {
-                        "term": "Закон",
-                        "meaning": "Awesome (Lit: Law)",
-                        "context": "Positive",
-                        "example": "Кристијан е закон дечко."
+                        "term": "Жими куров (Zhimi kurov)",
+                        "definition": "Literally 'I swear by my dick.' It is used to express strong disbelief or sarcasm, equivalent to saying 'Yeah, right' or 'My ass.'",
+                        "example": "Али: \"Јас ја напишав домашната работа.\" Кристијан: \"Жими куров.\"",
+                        "english": "Allie: \"I wrote the homework.\" Kristijan: \"Yeah, right.\""
                     },
                     {
-                        "term": "Лабаво",
-                        "meaning": "Chill/Relaxed",
-                        "context": "Chill",
-                        "example": "Џозеф пие кафе, лабаво."
+                        "term": "Ај па те барам (Aj pa te baram)",
+                        "definition": "A polite social lie meaning 'Okay, I’ll call you eventually.' It usually implies the conversation is over and there is no actual intention to call.",
+                        "example": "Кристијан: \"Часот е крај. Чао студенти. Ај па те барам.\"",
+                        "english": "Kristijan: \"The class is finished. Bye students. I’ll call you eventually.\""
                     },
                     {
-                        "term": "Крш",
-                        "meaning": "Trash/Broken",
-                        "context": "Negative",
-                        "example": "Телефонот на Тео е крш."
+                        "term": "Пицнување (Picnuvanje)",
+                        "definition": "The act of dressing up nicely or looking sharp, often for a special occasion.",
+                        "example": "Џозеф: \"Тојен оди на Пис Корп церемонија. Тој има ново одело. Тоа е пицнување.\"",
+                        "english": "Josef: \"Toyen is going to a Peace Corps ceremony. He has a new suit. That is dressing up sharp.\""
                     },
                     {
-                        "term": "Хаос",
-                        "meaning": "Mess/Chaos",
-                        "context": "Negative",
-                        "example": "Кај Сара во соба е хаос."
+                        "term": "Лаком г'з трагедија (Lakom gz tragedija)",
+                        "definition": "An idiom meaning 'A greedy ass [equals] a tragedy.' Used to warn someone that being too greedy leads to bad results.",
+                        "example": "Кристијан: \"Ми требаат повеќе пари за час.\" Сара: \"Кристијан, лаком г'з трагедија.\"",
+                        "english": "Kristijan: \"I need more money for class.\" Sara: \"Kristijan, greedy ass equals tragedy.\""
                     },
                     {
-                        "term": "Фаца",
-                        "meaning": "Cool person",
-                        "context": "Social",
-                        "example": "Даниел мисли дека е голема фаца."
-                    }
-                ]
-            },
-            {
-                "type": "interactive_scenario",
-                "title": "At the Café with the Crew",
-                "instruction": "Allie and Toyen are chatting. Fill in the missing slang words.",
-                "context": "Allie and Toyen are sitting at a café. They are looking at phones.",
-                "dialogueLines": [
-                    {
-                        "speaker": "Allie",
-                        "text": "Еј Тојен, дали го виде новото стори на Даниел?"
+                        "term": "Бооооо (Booooo)",
+                        "definition": "An interjection from the Bitola dialect used to express shock, surprise, disbelief, or awe. The length of the 'o' indicates the level of shock.",
+                        "example": "Кристијан: \"Каде живееш?\" Тео: \"Во Чашка.\" Кристијан: \"Бооооо!\"",
+                        "english": "Kristijan: \"Where do you live?\" Theo: \"In Chashka.\" Kristijan: \"Whoaaaa!\""
                     },
                     {
-                        "speaker": "Toyen",
-                        "text": "Не, не видов. Дали е со Елизабет?"
+                        "term": "Дремка (Dremka)",
+                        "definition": "Literally 'a nap.' Slang for a person, event, or situation that is incredibly boring or low-energy (a 'snooze-fest').",
+                        "example": "Стефани: \"Како е Хаб Деј?\" Елен: \"Лошо. Тешка дремка.\"",
+                        "english": "Stephanie: \"How is Hub Day?\" Ellen: \"Bad. A heavy nap [Total snooze-fest].\""
                     },
                     {
-                        "speaker": "Allie",
-                        "text": "Не! Тој е со Елен и Кејти во Охрид. Видеото е {blank}!",
-                        "answer": "закон"
+                        "term": "Педерлук (Pederluk)",
+                        "definition": "A 'dirty trick,' 'low blow,' or selfish move done by a friend. (Derived from a slur, but used in slang to describe behavior/actions).",
+                        "example": "Елизабет: \"Сара и Лаура одат на кафе без мене. Тоа е педерлук.\"",
+                        "english": "Elizabeth: \"Sara and Laura are going for coffee without me. That is a dirty trick.\""
                     },
                     {
-                        "speaker": "Toyen",
-                        "text": "Леле, Сара ми кажа дека и Лаура е таму."
+                        "term": "Дрндупки (Drndupki)",
+                        "definition": "Trifles, nonsense, or wasting time on small, unimportant things.",
+                        "example": "Кејти: \"На Хаб Деј ние правиме само дрндупки.\"",
+                        "english": "Katie: \"At Hub Day we are only doing nonsense/trifles.\""
                     },
                     {
-                        "speaker": "Allie",
-                        "text": "Чекај да видам... Оф, екранот ми е {blank}, а и интернетот на Стефани е {blank}.",
-                        "answers": [
-                            "крш",
-                            "катастрофа"
-                        ]
-                    },
-                    {
-                        "speaker": "Toyen",
-                        "text": "Не се нервирај Али, {blank}. Имаат ли вај-фај тука?",
-                        "answer": "лабаво"
-                    },
-                    {
-                        "speaker": "Allie",
-                        "text": "Имаат, ама Кристијан и Џозеф не ја знаат {blank}.",
-                        "answer": "лозинката"
-                    },
-                    {
-                        "speaker": "Toyen",
-                        "text": "Ајде ќе го прашаме Тео. Тој секогаш има интернет."
+                        "term": "Мастраф (Mastraf)",
+                        "definition": "Supplies, expenses, or 'the stuff' needed for an event (often refers to alcohol, food, or party gear).",
+                        "example": "Џозеф: \"Правиме забава. Ни треба мастрафот.\"",
+                        "english": "Josef: \"We are making a party. We need the supplies.\""
                     }
                 ]
             }

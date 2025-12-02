@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, CheckCircle, XCircle } from 'lucide-react';
+import Button from './ui/Button';
+import Input from './ui/Input';
 
 const InteractiveScenario = ({ data, onComplete }) => {
     const [visibleLines, setVisibleLines] = useState(0);
     const [currentInput, setCurrentInput] = useState('');
-    const [feedback, setFeedback] = useState(null); // 'correct' | 'incorrect'
+    const [feedback, setFeedback] = useState('default'); // 'default' | 'success' | 'error'
     const messagesEndRef = useRef(null);
 
     const lines = data.dialogueLines;
@@ -40,15 +42,15 @@ const InteractiveScenario = ({ data, onComplete }) => {
         );
 
         if (isCorrect) {
-            setFeedback('correct');
+            setFeedback('success');
             setTimeout(() => {
-                setFeedback(null);
+                setFeedback('default');
                 setCurrentInput('');
                 setVisibleLines(prev => prev + 1);
             }, 1000);
         } else {
-            setFeedback('incorrect');
-            setTimeout(() => setFeedback(null), 1500);
+            setFeedback('error');
+            setTimeout(() => setFeedback('default'), 1500);
         }
     };
 
@@ -76,8 +78,8 @@ const InteractiveScenario = ({ data, onComplete }) => {
                 className={`flex w-full mb-4 ${isRight ? 'justify-end' : 'justify-start'}`}
             >
                 <div className={`max-w-[80%] p-4 rounded-2xl ${isRight
-                        ? 'bg-blue-500 text-white rounded-tr-none'
-                        : 'bg-white border border-slate-100 text-slate-800 rounded-tl-none shadow-sm'
+                    ? 'bg-blue-500 text-white rounded-tr-none'
+                    : 'bg-white border border-slate-100 text-slate-800 rounded-tl-none shadow-sm'
                     }`}>
                     <p className="text-xs opacity-70 mb-1">{line.speaker}</p>
                     <p dangerouslySetInnerHTML={{ __html: text }} />
@@ -103,7 +105,7 @@ const InteractiveScenario = ({ data, onComplete }) => {
     }
 
     return (
-        <div className="flex flex-col h-[60vh]">
+        <div className="flex flex-col h-[50vh] md:h-[60vh]">
             <div className="flex-1 overflow-y-auto p-4 space-y-4">
                 {lines.slice(0, visibleLines + (isUserTurn ? 1 : 0)).map((line, i) => {
                     // Don't render the current line if it's the user's turn (we render the input area instead? No, render bubble with blank)
@@ -122,8 +124,8 @@ const InteractiveScenario = ({ data, onComplete }) => {
                         className={`flex w-full mb-4 ${currentLine.speaker === 'Toyen' ? 'justify-end' : 'justify-start'}`}
                     >
                         <div className={`max-w-[80%] p-4 rounded-2xl ${currentLine.speaker === 'Toyen'
-                                ? 'bg-blue-500 text-white rounded-tr-none'
-                                : 'bg-white border border-slate-100 text-slate-800 rounded-tl-none shadow-sm'
+                            ? 'bg-blue-500 text-white rounded-tr-none'
+                            : 'bg-white border border-slate-100 text-slate-800 rounded-tl-none shadow-sm'
                             }`}>
                             <p className="text-xs opacity-70 mb-1">{currentLine.speaker}</p>
                             <p>
@@ -138,29 +140,25 @@ const InteractiveScenario = ({ data, onComplete }) => {
             </div>
 
             {isUserTurn && (
-                <div className="mt-4">
-                    <form onSubmit={handleSubmit} className="relative">
-                        <input
+                <div className="mt-4 px-4">
+                    <form onSubmit={handleSubmit} className="relative flex items-center gap-2">
+                        <Input
                             type="text"
                             value={currentInput}
                             onChange={(e) => setCurrentInput(e.target.value)}
                             placeholder="Type the missing word..."
-                            className={`
-                w-full p-4 pr-12 rounded-xl border-2 outline-none transition-all
-                ${feedback === 'correct' ? 'border-green-500 bg-green-50' :
-                                    feedback === 'incorrect' ? 'border-red-500 bg-red-50' :
-                                        'border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100'}
-              `}
+                            status={feedback}
                             autoFocus
                         />
-                        <button
+                        <Button
                             type="submit"
-                            className="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                            variant="primary"
+                            className="!p-3 !rounded-full aspect-square flex items-center justify-center shrink-0"
                         >
                             <Send size={18} />
-                        </button>
+                        </Button>
                     </form>
-                    {feedback === 'incorrect' && (
+                    {feedback === 'error' && (
                         <motion.p
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}

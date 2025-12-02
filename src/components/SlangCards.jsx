@@ -1,80 +1,76 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { RotateCw, Check, X } from 'lucide-react';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { MessageCircle } from 'lucide-react';
+
+const cardStyles = [
+    { bg: '#f43f5e', border: '#e11d48', text: '#ffffff' }, // Rose
+    { bg: '#3b82f6', border: '#2563eb', text: '#ffffff' }, // Blue
+    { bg: '#22c55e', border: '#16a34a', text: '#ffffff' }, // Green
+    { bg: '#eab308', border: '#ca8a04', text: '#ffffff' }, // Yellow
+    { bg: '#a855f7', border: '#9333ea', text: '#ffffff' }, // Purple
+    { bg: '#ec4899', border: '#db2777', text: '#ffffff' }, // Pink
+    { bg: '#6366f1', border: '#4f46e5', text: '#ffffff' }, // Indigo
+    { bg: '#f97316', border: '#ea580c', text: '#ffffff' }, // Orange
+    { bg: '#14b8a6', border: '#0d9488', text: '#ffffff' }, // Teal
+    { bg: '#06b6d4', border: '#0891b2', text: '#ffffff' }  // Cyan
+];
 
 const SlangCards = ({ data, onNext }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [isFlipped, setIsFlipped] = useState(false);
-
-    const currentCard = data.cards[currentIndex];
-    const isLastCard = currentIndex === data.cards.length - 1;
-
-    const handleNextCard = () => {
-        setIsFlipped(false);
-        if (isLastCard) {
-            onNext();
-        } else {
-            setTimeout(() => setCurrentIndex(prev => prev + 1), 300);
-        }
-    };
-
     return (
-        <div className="flex flex-col h-[60vh]">
-            <div className="flex-1 relative perspective-1000">
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={currentIndex}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 1.1 }}
-                        transition={{ duration: 0.3 }}
-                        className="w-full h-full relative preserve-3d cursor-pointer"
-                        onClick={() => setIsFlipped(!isFlipped)}
-                    >
-                        <motion.div
-                            className="absolute inset-0 w-full h-full bg-white rounded-3xl shadow-xl border border-slate-100 flex flex-col items-center justify-center p-8 backface-hidden"
-                            animate={{ rotateY: isFlipped ? 180 : 0 }}
-                            transition={{ duration: 0.6, type: "spring", stiffness: 260, damping: 20 }}
-                        >
-                            <span className="text-sm font-bold text-blue-500 uppercase tracking-wider mb-4">Term</span>
-                            <h2 className="text-5xl font-bold text-slate-800 text-center mb-8">{currentCard.term}</h2>
-                            <div className="flex items-center text-slate-400 text-sm">
-                                <RotateCw className="w-4 h-4 mr-2" />
-                                Tap to flip
-                            </div>
-                        </motion.div>
+        <div className="w-full space-y-8 pb-12 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {data.cards.map((card, index) => {
+                    const style = cardStyles[index % cardStyles.length];
 
+                    return (
                         <motion.div
-                            className="absolute inset-0 w-full h-full bg-blue-500 rounded-3xl shadow-xl flex flex-col items-center justify-center p-8 backface-hidden"
-                            initial={{ rotateY: 180 }}
-                            animate={{ rotateY: isFlipped ? 0 : 180 }}
-                            transition={{ duration: 0.6, type: "spring", stiffness: 260, damping: 20 }}
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.1 }}
+                            whileHover={{ scale: 1.02, y: -5 }}
+                            style={{
+                                backgroundColor: style.bg,
+                                borderColor: style.border,
+                                color: style.text
+                            }}
+                            className="relative p-10 pl-[15%] rounded-[2.5rem] border-4 shadow-xl flex flex-col space-y-6"
                         >
-                            <span className="text-sm font-bold text-white/70 uppercase tracking-wider mb-4">Meaning</span>
-                            <h2 className="text-3xl font-bold text-white text-center mb-2">{currentCard.meaning}</h2>
-                            <p className="text-white/80 text-center italic mb-6">"{currentCard.example}"</p>
-                            <div className="px-3 py-1 bg-white/20 rounded-full text-white text-xs font-bold">
-                                {currentCard.context}
+                            <div>
+                                <h3 className="font-black mb-4 tracking-tight" style={{ fontSize: '5rem', lineHeight: '1' }}>{card.term}</h3>
+                                <div className="h-2 w-32 bg-white/40 rounded-full"></div>
+                            </div>
+
+                            <div className="space-y-4">
+                                <span className="text-lg font-bold uppercase tracking-widest opacity-80">Definition</span>
+                                <p className="font-bold leading-tight" style={{ fontSize: '2.5rem' }}>
+                                    {card.definition}
+                                </p>
+                            </div>
+
+                            <div className="bg-white/20 rounded-[2rem] p-8 backdrop-blur-md mt-auto border border-white/10">
+                                <span className="text-lg font-bold uppercase tracking-widest opacity-80 mb-4 block">Example</span>
+                                <div className="space-y-4">
+                                    <p className="italic font-medium leading-relaxed" style={{ fontSize: '2rem' }}>
+                                        "{card.example}"
+                                    </p>
+                                    <div className="h-px w-full bg-white/20"></div>
+                                    <p className="font-medium opacity-90" style={{ fontSize: '1.5rem' }}>
+                                        {card.english}
+                                    </p>
+                                </div>
                             </div>
                         </motion.div>
-                    </motion.div>
-                </AnimatePresence>
+                    );
+                })}
             </div>
 
-            <div className="mt-8 grid grid-cols-2 gap-4">
+            <div className="flex justify-center pt-8">
                 <button
-                    onClick={handleNextCard}
-                    className="py-4 bg-red-100 text-red-600 rounded-xl font-bold flex items-center justify-center hover:bg-red-200 transition-colors"
+                    onClick={onNext}
+                    className="px-12 py-4 bg-slate-900 text-white rounded-full font-bold text-xl hover:bg-slate-800 transition-all shadow-lg hover:shadow-2xl hover:-translate-y-1 active:scale-95"
                 >
-                    <X className="w-5 h-5 mr-2" />
-                    Study again
-                </button>
-                <button
-                    onClick={handleNextCard}
-                    className="py-4 bg-green-100 text-green-600 rounded-xl font-bold flex items-center justify-center hover:bg-green-200 transition-colors"
-                >
-                    <Check className="w-5 h-5 mr-2" />
-                    I know this
+                    Continue to Scenario
                 </button>
             </div>
         </div>

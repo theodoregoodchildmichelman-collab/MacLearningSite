@@ -71,9 +71,10 @@ const VocabularyGrid = ({ data, onNext, lessonIntro }) => {
 
             <button
                 onClick={onNext}
-                className="w-full py-5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-bold text-xl shadow-xl shadow-blue-600/30 hover:shadow-blue-600/50 hover:scale-[1.02] active:scale-95 transition-all"
+                className="w-full group relative inline-flex items-center justify-center px-16 py-6 text-2xl font-bold text-white transition-all duration-300 bg-blue-600 rounded-full shadow-xl hover:bg-blue-700 hover:shadow-2xl hover:-translate-y-1 hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-200"
             >
                 Continue
+                <ArrowRight className="ml-4 w-8 h-8 group-hover:translate-x-1 transition-transform" />
             </button>
         </div>
     );

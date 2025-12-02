@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Volume2, CheckCircle, XCircle, ArrowRight, RefreshCw } from 'lucide-react';
+import { Volume2, CheckCircle, XCircle, ArrowRight, RefreshCw, CircleArrowRight } from 'lucide-react';
 
 const Quiz = ({ data, onComplete }) => {
     const { title, instruction, vocabulary } = data;
@@ -146,10 +146,10 @@ const Quiz = ({ data, onComplete }) => {
                     </button>
                     <button
                         onClick={onComplete}
-                        className="w-full py-3 px-6 bg-blue-500 hover:bg-blue-600 text-white rounded-xl font-semibold flex items-center justify-center gap-2 transition-colors"
+                        className="w-full py-3 px-6 bg-[#DC2626] hover:bg-[#B91C1C] text-white rounded-full font-extrabold uppercase tracking-wider shadow-lg flex items-center justify-center gap-2 transition-all active:scale-95"
                     >
-                        Continue Lesson
-                        <ArrowRight className="w-5 h-5" />
+                        <CircleArrowRight className="w-6 h-6" />
+                        CONTINUE
                     </button>
                 </div>
             </div>
