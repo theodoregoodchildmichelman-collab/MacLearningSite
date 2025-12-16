@@ -3,7 +3,8 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import { UserProvider } from './context/UserContext';
 import Layout from './components/Layout';
 import Dashboard from './components/Dashboard';
-import LessonView from './components/LessonView'; // We will create this next
+import LessonView from './components/LessonView';
+import Chapter2View from './views/Chapter2View';
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
           <Route path="chapters" element={<DashboardWrapper />} />
           <Route path="lesson" element={<LessonViewWrapper />} />
           <Route path="chapter/:id" element={<LessonViewWrapper />} />
-          {/* Add other routes as needed */}
+          <Route path="chapter/2" element={<Chapter2View />} />
+          <Route path="chapter/:id" element={<LessonViewWrapper />} />
+          {/* Add other routes as needed */}\n\n
         </Route>
       </Routes>
     </UserProvider>

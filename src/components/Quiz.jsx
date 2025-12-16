@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Volume2, CheckCircle, XCircle, ArrowRight, RefreshCw, CircleArrowRight } from 'lucide-react';
+import BlurReveal from './BlurReveal';
 
 const Quiz = ({ data, onComplete }) => {
     const { title, instruction, vocabulary } = data;
@@ -12,10 +13,12 @@ const Quiz = ({ data, onComplete }) => {
     const [isCorrect, setIsCorrect] = useState(null); // null, true, false
 
     useEffect(() => {
-        if (vocabulary && vocabulary.length > 0) {
+        if (data.questions && data.questions.length > 0) {
+            setQuestions(data.questions);
+        } else if (vocabulary && vocabulary.length > 0) {
             generateQuestions();
         }
-    }, [vocabulary]);
+    }, [vocabulary, data.questions]);
 
     const generateQuestions = () => {
         const generatedQuestions = [];
@@ -253,7 +256,7 @@ const Quiz = ({ data, onComplete }) => {
                             className="mt-6 pt-6 border-t border-slate-100"
                         >
                             <div className={`mb-4 text-center font-bold ${isCorrect ? 'text-green-600' : 'text-red-500'}`}>
-                                {isCorrect ? 'Correct! 🎉' : `Incorrect. The answer is "${currentQuestion.correctAnswer}"`}
+                                {isCorrect ? 'Correct! 🎉' : <span className="flex items-center justify-center gap-2">Incorrect. The answer is <BlurReveal>"{currentQuestion.correctAnswer}"</BlurReveal></span>}
                             </div>
                             <button
                                 onClick={handleNext}

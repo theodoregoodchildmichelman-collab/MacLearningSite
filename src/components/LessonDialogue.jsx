@@ -18,7 +18,7 @@ const storyImages = [
     img7, img8, img9, img10, img11
 ];
 
-export default function LessonDialogue({ onNext }) {
+export default function LessonDialogue({ onNext, data }) {
     return (
         <div className="max-w-2xl mx-auto space-y-8 md:space-y-12 pb-12 font-sans antialiased">
 
@@ -33,19 +33,33 @@ export default function LessonDialogue({ onNext }) {
             <section className="bg-white rounded-[2rem] md:rounded-[40px] p-6 md:p-10 shadow-sm border border-slate-100 h-[75vh] flex flex-col">
                 <div className="mb-6 flex-shrink-0">
                     <h2 className="text-2xl font-bold text-slate-900 mb-3 flex items-center">
-                        Find a partner and read this story.
+                        {data ? (data.title || "Dialogue") : "Find a partner and read this story."}
                     </h2>
                 </div>
 
                 <div className="flex-1 overflow-y-auto pr-2 space-y-4 custom-scrollbar">
-                    {storyImages.map((img, index) => (
-                        <img
-                            key={index}
-                            src={img}
-                            alt={`Story part ${index + 1}`}
-                            className="w-[85%] h-auto mx-auto mb-6 rounded-xl shadow-sm last:mb-0"
-                        />
-                    ))}
+                    {data ? (
+                        <div className="space-y-6">
+                            {data.lines.map((line, index) => (
+                                <div key={index} className={`flex flex-col ${line.speaker === 'Speaker B' ? 'items-end' : 'items-start'}`}>
+                                    <div className={`max-w-[80%] rounded-2xl p-4 ${line.speaker === 'Speaker B' ? 'bg-blue-100 text-blue-900 rounded-tr-none' : 'bg-gray-100 text-gray-900 rounded-tl-none'}`}>
+                                        <div className="text-xs font-bold mb-1 opacity-70">{line.speaker}</div>
+                                        <div className="text-lg font-medium">{line.mk_text}</div>
+                                        {line.en_translation && <div className="text-sm text-gray-500 mt-1">{line.en_translation}</div>}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    ) : (
+                        storyImages.map((img, index) => (
+                            <img
+                                key={index}
+                                src={img}
+                                alt={`Story part ${index + 1}`}
+                                className="w-[85%] h-auto mx-auto mb-6 rounded-xl shadow-sm last:mb-0"
+                            />
+                        ))
+                    )}
                 </div>
             </section>
 

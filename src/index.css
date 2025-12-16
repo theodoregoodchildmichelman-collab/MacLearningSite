@@ -6,6 +6,16 @@
   --radius-card: 24px;
   --radius-pill: 9999px;
   --font-sans: 'Plus Jakarta Sans', sans-serif;
+
+  /* Fluid Typography */
+  --font-h1: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
+  --font-h2: clamp(1.5rem, 1.2rem + 1.5vw, 2.5rem);
+  --font-h3: clamp(1.25rem, 1.1rem + 0.75vw, 1.75rem);
+  --font-body: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+
+@utility max-w-prose-custom {
+  max-width: 75ch;
 }
 
 @utility perspective-1000 {

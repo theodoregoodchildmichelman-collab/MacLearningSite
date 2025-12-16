@@ -1,0 +1,827 @@
+{
+    "lessonModule": {
+        "id": "lesson_01",
+        "title": "Chapter 1: I am from Macedonia",
+        "subtitle": "Јас сум од Македонија, ти си од Америка",
+        "proficiencyLevel": "Novice",
+        "theme": "Introductions & Origins",
+        "intro": "Здраво! Во оваа лекција ќе научиме како да се претставиме и да кажеме од каде сме.",
+        "structure": "book",
+        "pages": [
+            {
+                "pageNumber": 6,
+                "title": "1. Јас сум од..., Ти си од...",
+                "content": [
+                    {
+                        "type": "dialogue",
+                        "title": "1. Слушајте (Listen)",
+                        "lines": [
+                            {
+                                "speaker": "Маја",
+                                "mk": "Здраво, јас сум Маја. А вие?",
+                                "en": "Hello, I am Maja. And you?",
+                                "audio_id": "1.1_A"
+                            },
+                            {
+                                "speaker": "Марко",
+                                "mk": "Ние сме Марко и Тони. Јас сум Марко, а тој е Тони.",
+                                "en": "We are Marko and Toni. I am Marko, and he is Toni.",
+                                "audio_id": "1.1_B"
+                            },
+                            {
+                                "speaker": "Тони",
+                                "mk": "Мило ми е!",
+                                "en": "Nice to meet you!",
+                                "audio_id": "1.1_C"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "grammar_box",
+                        "title": "Глагол 'Сум' (To Be)",
+                        "items": [
+                            {
+                                "mk": "1. ЈАС СУМ...",
+                                "en": "I am..."
+                            },
+                            {
+                                "mk": "2. ТИ СИ...",
+                                "en": "You are..."
+                            },
+                            {
+                                "mk": "3. ТОЈ/ТАА/ТОА Е...",
+                                "en": "He/She/It is..."
+                            },
+                            {
+                                "mk": "1. НИЕ СМЕ...",
+                                "en": "We are..."
+                            },
+                            {
+                                "mk": "2. ВИЕ СТЕ...",
+                                "en": "You are..."
+                            },
+                            {
+                                "mk": "3. ТИЕ СЕ...",
+                                "en": "They are..."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "quiz",
+                        "id": "1.1",
+                        "title": "1.1. Вежба: Глагол Сум (Practice To Be)",
+                        "instruction": "Select the correct sentence for the pronoun.",
+                        "questions": [
+                            {
+                                "type": "multiple_choice",
+                                "question": "ЈАС...",
+                                "correctAnswer": "Јас сум Маја.",
+                                "options": [
+                                    "Јас сум Маја.",
+                                    "Ти си Маја.",
+                                    "Тој е Маја."
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "ТИ...",
+                                "correctAnswer": "Ти си од Македонија.",
+                                "options": [
+                                    "Ти си од Македонија.",
+                                    "Ти е од Македонија.",
+                                    "Ти сум од Македонија."
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "НИЕ...",
+                                "correctAnswer": "Ние сме Марко и Тони.",
+                                "options": [
+                                    "Ние сме Марко и Тони.",
+                                    "Ние се Марко и Тони.",
+                                    "Ние сте Марко и Тони."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "match_pairs",
+                        "id": "1.2",
+                        "title": "1.2. Поврзете ги зборовите (Match the words)",
+                        "items": [
+                            {
+                                "id": "p1",
+                                "term": "Јас",
+                                "definition": "I"
+                            },
+                            {
+                                "id": "p2",
+                                "term": "Ти",
+                                "definition": "You"
+                            },
+                            {
+                                "id": "p3",
+                                "term": "Тој",
+                                "definition": "He"
+                            },
+                            {
+                                "id": "p4",
+                                "term": "Таа",
+                                "definition": "She"
+                            },
+                            {
+                                "id": "p5",
+                                "term": "Ние",
+                                "definition": "We"
+                            },
+                            {
+                                "id": "p6",
+                                "term": "Вие",
+                                "definition": "You (pl/polite)"
+                            },
+                            {
+                                "id": "p7",
+                                "term": "Тие",
+                                "definition": "They"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "quiz",
+                        "id": "1.3",
+                        "title": "1.3. Пополнете празни места (Fill in the blanks)",
+                        "instruction": "Complete the dialogue with the correct words.",
+                        "questions": [
+                            {
+                                "type": "multiple_choice",
+                                "question": "А: Добро утро! \nБ: _______ утро!",
+                                "correctAnswer": "Добро",
+                                "options": [
+                                    "Добро",
+                                    "Лошо",
+                                    "Здраво"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "А: Како _______? (are you - polite)",
+                                "correctAnswer": "сте",
+                                "options": [
+                                    "сте",
+                                    "си",
+                                    "сме"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Б: Добро. А _______? (you - polite)",
+                                "correctAnswer": "вие",
+                                "options": [
+                                    "вие",
+                                    "ти",
+                                    "ние"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "А: Добро. Јас _______ Ана.",
+                                "correctAnswer": "сум",
+                                "options": [
+                                    "сум",
+                                    "си",
+                                    "е"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "А: ...а таа _______ Лидија.",
+                                "correctAnswer": "е",
+                                "options": [
+                                    "е",
+                                    "се",
+                                    "сте"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Б: _______ сум Марк...",
+                                "correctAnswer": "Јас",
+                                "options": [
+                                    "Јас",
+                                    "Ти",
+                                    "Тој"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Б: ...а ______ е Филип.",
+                                "correctAnswer": "тој",
+                                "options": [
+                                    "тој",
+                                    "таа",
+                                    "тие"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "pageNumber": 7,
+                "title": "2. Негација (Negation)",
+                "content": [
+                    {
+                        "type": "dialogue",
+                        "title": "2. Слушајте (Listen)",
+                        "lines": [
+                            {
+                                "speaker": "Марко",
+                                "mk": "Јас сум Марко. Јас НЕ сум Ана.",
+                                "en": "I am Marko. I am NOT Ana.",
+                                "audio_id": "2.1_A"
+                            },
+                            {
+                                "speaker": "Ана",
+                                "mk": "Јас сум Ана. Јас НЕ сум Марко.",
+                                "en": "I am Ana. I am NOT Marko.",
+                                "audio_id": "2.1_B"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "grammar_note",
+                        "title": "Формула",
+                        "markdown": "**ЈАС + НЕ + СУМ** (I + not + am)"
+                    },
+                    {
+                        "type": "quiz",
+                        "id": "2.1",
+                        "title": "2.1. Вежба: Негација (Negation Practice)",
+                        "instruction": "Choose the correct negative sentence.",
+                        "questions": [
+                            {
+                                "type": "multiple_choice",
+                                "question": "How do you say: 'I am not Ivana'?",
+                                "correctAnswer": "Јас не сум Ивана.",
+                                "options": [
+                                    "Јас не сум Ивана.",
+                                    "Јас сум не Ивана.",
+                                    "Јас не е Ивана."
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "How do you say: 'He is not from America'?",
+                                "correctAnswer": "Тој не е од Америка.",
+                                "options": [
+                                    "Тој не е од Америка.",
+                                    "Тој е не од Америка.",
+                                    "Не тој е од Америка."
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Translate: 'He is not Morgan Freeman.'",
+                                "correctAnswer": "Тој не е Морган Фримен.",
+                                "options": [
+                                    "Тој не е Морган Фримен.",
+                                    "Тој не сум Морган Фримен.",
+                                    "Тој е не Морган Фримен."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "match_pairs",
+                        "id": "2.2",
+                        "title": "2.2. Личностите (Famous People)",
+                        "items": [
+                            {
+                                "id": "fp1",
+                                "term": "Morgan Freeman",
+                                "definition": "Тој е од Америка"
+                            },
+                            {
+                                "id": "fp2",
+                                "term": "Ed Sheeran",
+                                "definition": "Тој е од Англија"
+                            },
+                            {
+                                "id": "fp3",
+                                "term": "George Clooney",
+                                "definition": "Тој е од Америка"
+                            },
+                            {
+                                "id": "fp4",
+                                "term": "Selena Gomez",
+                                "definition": "Таа е од Америка"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "dialogue",
+                        "title": "3. Од каде сте вие? (Where are you from?)",
+                        "lines": [
+                            {
+                                "speaker": "Ана",
+                                "mk": "Добар ден!",
+                                "en": "Good day!"
+                            },
+                            {
+                                "speaker": "Марк",
+                                "mk": "Добар ден!",
+                                "en": "Good day!"
+                            },
+                            {
+                                "speaker": "Ана",
+                                "mk": "Како сте?",
+                                "en": "How are you?"
+                            },
+                            {
+                                "speaker": "Марк",
+                                "mk": "Добро. А вие?",
+                                "en": "Good. And you?"
+                            },
+                            {
+                                "speaker": "Ана",
+                                "mk": "Добро. Јас сум Ана. Таа е Лидија. А вие?",
+                                "en": "Good. I am Ana. She is Lidija. And you?"
+                            },
+                            {
+                                "speaker": "Марк",
+                                "mk": "Јас сум Марк, а тој е Филип.",
+                                "en": "I am Mark, and he is Filip."
+                            },
+                            {
+                                "speaker": "Ана",
+                                "mk": "Ние сме од Македонија. ОД КАДЕ СТЕ ВИЕ?",
+                                "en": "We are from Macedonia. WHERE ARE YOU FROM?"
+                            },
+                            {
+                                "speaker": "Марк",
+                                "mk": "Ние не сме од Македонија, ние сме од Америка.",
+                                "en": "We are not from Macedonia, we are from America."
+                            },
+                            {
+                                "speaker": "Марк",
+                                "mk": "Јас сум од Илиноис, а Филип не е од Илиноис, тој е од Аризона.",
+                                "en": "I am from Illinois, and Filip is not from Illinois, he is from Arizona."
+                            },
+                            {
+                                "speaker": "Марк",
+                                "mk": "ОД КАДЕ Е Лидија?",
+                                "en": "WHERE IS Lidija FROM?"
+                            },
+                            {
+                                "speaker": "Ана",
+                                "mk": "Лидија е од Скопје. Јас не сум од Скопје, јас сум од Охрид.",
+                                "en": "Lidija is from Skopje. I am not from Skopje, I am from Ohrid."
+                            },
+                            {
+                                "speaker": "Ана",
+                                "mk": "Мило ми е!",
+                                "en": "Nice to meet you!"
+                            },
+                            {
+                                "speaker": "Марк",
+                                "mk": "Мило ми е!",
+                                "en": "Nice to meet you!"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "pageNumber": 8,
+                "title": "3. Прашања & 4. Националности",
+                "content": [
+                    {
+                        "type": "quiz",
+                        "id": "3.1",
+                        "title": "3.1. Проверка на разбирање (Comprehension Check)",
+                        "instruction": "Answer the questions based on the previous dialogue.",
+                        "questions": [
+                            {
+                                "type": "multiple_choice",
+                                "question": "Од каде е Ана?",
+                                "correctAnswer": "Македонија",
+                                "options": [
+                                    "Македонија",
+                                    "Америка",
+                                    "Англија"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Од каде е Марк?",
+                                "correctAnswer": "Америка",
+                                "options": [
+                                    "Америка",
+                                    "Македонија",
+                                    "Србија"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Дали Филип е од Илиноис?",
+                                "correctAnswer": "Не, тој е од Аризона.",
+                                "options": [
+                                    "Не, тој е од Аризона.",
+                                    "Да, тој е од Илиноис."
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Од каде е Лидија?",
+                                "correctAnswer": "Скопје",
+                                "options": [
+                                    "Скопје",
+                                    "Охрид",
+                                    "Америка"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "grammar_table",
+                        "title": "4. Суфикси за националност (Nationality Suffixes)",
+                        "headers": [
+                            "Suffix",
+                            "Macedonian",
+                            "American",
+                            "Albanian"
+                        ],
+                        "rows": [
+                            {
+                                "suffix": "-ЕЦ (m)",
+                                "mk": "МАКЕДОНЕЦ",
+                                "us": "АМЕРИКАНЕЦ",
+                                "al": "АЛБАНЕЦ"
+                            },
+                            {
+                                "suffix": "-КА (f)",
+                                "mk": "МАКЕДОНКА",
+                                "us": "АМЕРИКАНКА",
+                                "al": "АЛБАНКА"
+                            },
+                            {
+                                "suffix": "-ЦИ (pl)",
+                                "mk": "МАКЕДОНЦИ",
+                                "us": "АМЕРИКАНЦИ",
+                                "al": "АЛБАНЦИ"
+                            },
+                            {
+                                "suffix": "-КИ (pl.f)",
+                                "mk": "МАКЕДОНКИ",
+                                "us": "АМЕРИКАНКИ",
+                                "al": "АЛБАНКИ"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "flashcards",
+                        "title": "Nationality Flashcards",
+                        "items": [
+                            {
+                                "mk": "Македонец",
+                                "en": "Macedonian (male)",
+                                "example": "Тој е Македонец."
+                            },
+                            {
+                                "mk": "Македонка",
+                                "en": "Macedonian (female)",
+                                "example": "Таа е Македонка."
+                            },
+                            {
+                                "mk": "Американец",
+                                "en": "American (male)",
+                                "example": "Џон е Американец."
+                            },
+                            {
+                                "mk": "Американка",
+                                "en": "American (female)",
+                                "example": "Џејн е Американка."
+                            },
+                            {
+                                "mk": "Албанец",
+                                "en": "Albanian (male)",
+                                "example": "Тој е Албанец."
+                            },
+                            {
+                                "mk": "Албанка",
+                                "en": "Albanian (female)",
+                                "example": "Таа е Албанка."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "quiz",
+                        "id": "4.exercise",
+                        "title": "4. Вежба: Националности",
+                        "instruction": "Select the correct nationality form.",
+                        "questions": [
+                            {
+                                "type": "multiple_choice",
+                                "question": "Ана е од Македонија. Таа е _______.",
+                                "correctAnswer": "Македонка",
+                                "options": [
+                                    "Македонка",
+                                    "Македонец",
+                                    "Македонци"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Џон е од Америка. Тој е _______.",
+                                "correctAnswer": "Американец",
+                                "options": [
+                                    "Американец",
+                                    "Американка",
+                                    "Американци"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Тие се од Македонија. Тие се _______.",
+                                "correctAnswer": "Македонци",
+                                "options": [
+                                    "Македонци",
+                                    "Македонец",
+                                    "Македонка"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Ова е Иван, а ова е Кирил. Тие се од Македонија. Тие се...",
+                                "correctAnswer": "Македонци",
+                                "options": [
+                                    "Македонци",
+                                    "Македонки",
+                                    "Македонец"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Џенифер и Сара се од Америка. Тие се...",
+                                "correctAnswer": "Американки",
+                                "options": [
+                                    "Американки",
+                                    "Американци",
+                                    "Американка"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "pageNumber": 9,
+                "title": "4. Претставување & 5. Волонтер",
+                "content": [
+                    {
+                        "type": "quiz",
+                        "id": "4.1",
+                        "title": "4.1. Претставете се (Self Introduction)",
+                        "instruction": "Build a correct introduction.",
+                        "questions": [
+                            {
+                                "type": "multiple_choice",
+                                "question": "Choose the best introduction for a Macedonian female:",
+                                "correctAnswer": "Јас сум Ана. Јас сум од Македонија. Јас сум Македонка.",
+                                "options": [
+                                    "Јас сум Ана. Јас сум од Македонија. Јас сум Македонка.",
+                                    "Јас сум Ана. Јас сум од Америка. Јас сум Македонец.",
+                                    "Ти си Ана. Ти си од Македонија."
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Choose the best introduction for yourself (American male):",
+                                "correctAnswer": "Јас сум Џон. Јас не сум од Македонија. Јас сум од Америка. Јас сум Американец.",
+                                "options": [
+                                    "Јас сум Џон. Јас не сум од Македонија. Јас сум од Америка. Јас сум Американец.",
+                                    "Јас сум Џон. Јас не сум од Македонија. Јас сум Американка.",
+                                    "Јас сум Џон. Ти си од Америка."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "quiz",
+                        "id": "4.2",
+                        "title": "4.2. Прашувајте за личностите (Ask about people)",
+                        "instruction": "Identify where these people are from based on context clues or general knowledge.",
+                        "questions": [
+                            {
+                                "type": "multiple_choice",
+                                "question": "Од каде е Каролина? (Carolina Goceva)",
+                                "correctAnswer": "Каролина е од Македонија. Таа е Македонка.",
+                                "options": [
+                                    "Каролина е од Македонија. Таа е Македонка.",
+                                    "Каролина е од Америка. Таа е Американка."
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Од каде е Вил Смит? (Will Smith)",
+                                "correctAnswer": "Вил е од Америка. Тој е Американец.",
+                                "options": [
+                                    "Вил е од Америка. Тој е Американец.",
+                                    "Вил е од Македонија. Тој е Македонец."
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Од каде се Џеј Зи и Бијонсе? (Jay Z & Beyonce)",
+                                "correctAnswer": "Тие се од Америка. Тие се Американци.",
+                                "options": [
+                                    "Тие се од Америка. Тие се Американци.",
+                                    "Тие се од Англија. Тие се Англичани."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "flashcards",
+                        "title": "Vocabulary: Volunteer",
+                        "items": [
+                            {
+                                "mk": "Волонтер",
+                                "en": "Volunteer (m)"
+                            },
+                            {
+                                "mk": "Волонтерка",
+                                "en": "Volunteer (f)"
+                            },
+                            {
+                                "mk": "Мировен Корпус",
+                                "en": "Peace Corps"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "match_pairs",
+                        "id": "5.1",
+                        "title": "5.1. Vocabulary Retention",
+                        "items": [
+                            {
+                                "id": "v1",
+                                "term": "Volunteer (m)",
+                                "definition": "Волонтер"
+                            },
+                            {
+                                "id": "v2",
+                                "term": "Volunteer (f)",
+                                "definition": "Волонтерка"
+                            },
+                            {
+                                "id": "v3",
+                                "term": "Peace Corps",
+                                "definition": "Мировен Корпус"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "pageNumber": 10,
+                "title": "5. Вежби (Exercises)",
+                "content": [
+                    {
+                        "type": "quiz",
+                        "id": "5.3",
+                        "title": "5.3. Финална Проверка (Final Check)",
+                        "instruction": "Fill in the correct forms.",
+                        "questions": [
+                            {
+                                "type": "multiple_choice",
+                                "question": "Тој е Џон. Тој е _______ на Мировен корпус.",
+                                "correctAnswer": "волонтер",
+                                "options": [
+                                    "волонтер",
+                                    "волонтерка"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Таа е Џесика. Таа е _______ на Мировен корпус.",
+                                "correctAnswer": "волонтерка",
+                                "options": [
+                                    "волонтерка",
+                                    "волонтер"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Мајкл и Џесика се _______.",
+                                "correctAnswer": "Американци",
+                                "options": [
+                                    "Американци",
+                                    "Американец",
+                                    "Американка"
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Добро утро! Јас сум Мајкл. Јас не сум од Америка. Јас сум _______ (Volunteer) на Мировен корпус.",
+                                "correctAnswer": "волонтер",
+                                "options": [
+                                    "волонтер",
+                                    "волонтерка"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "quiz",
+                        "id": "5.3.1",
+                        "title": "5.3.1. Разбирање на текст (Text Comprehension)",
+                        "instruction": "Answer questions based on the Volunteer text.",
+                        "questions": [
+                            {
+                                "type": "multiple_choice",
+                                "question": "Од каде е Лидија?",
+                                "correctAnswer": "Лидија е од Македонија.",
+                                "options": [
+                                    "Лидија е од Македонија.",
+                                    "Лидија е од Америка."
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Дали таа е Американка?",
+                                "correctAnswer": "Не, таа не е Американка. Таа е Македонка.",
+                                "options": [
+                                    "Не, таа не е Американка. Таа е Македонка.",
+                                    "Да, таа е Американка."
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Од каде е Џесика?",
+                                "correctAnswer": "Џесика е од Америка.",
+                                "options": [
+                                    "Џесика е од Америка.",
+                                    "Џесика е од Македонија."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "pageNumber": 11,
+                "title": "2. Професија (Profession)",
+                "content": [
+                    {
+                        "type": "dialogue",
+                        "title": "1. Слушајте (Listen)",
+                        "lines": [
+                            {
+                                "speaker": "Игор",
+                                "mk": "Добар ден! Јас се викам Игор. Како се викате вие?",
+                                "en": "Good day! My name is Igor. What is your name?"
+                            },
+                            {
+                                "speaker": "Лидија",
+                                "mk": "Добар ден! Јас се викам Лидија. Мило ми е!",
+                                "en": "Good day! My name is Lidija. Nice to meet you!"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "grammar_note",
+                        "title": "ЈАС СЕ ВИКАМ... (My name is...)",
+                        "markdown": "Phrases:\n- **Јас се викам...** (I call myself... / My name is...)\n- **Како се викате вие?** (How do you call yourself? / What is your name?)"
+                    },
+                    {
+                        "type": "quiz",
+                        "id": "2.prof",
+                        "title": "2.2. Вежба: Професии",
+                        "instruction": "Select correct profession forms",
+                        "questions": [
+                            {
+                                "type": "multiple_choice",
+                                "question": "Ова е Гоце. Што е тој по професија? (Professor)",
+                                "correctAnswer": "Тој е професор.",
+                                "options": [
+                                    "Тој е професор.",
+                                    "Тој е професорка."
+                                ]
+                            },
+                            {
+                                "type": "multiple_choice",
+                                "question": "Ова е Радмила. Што е таа по професија? (Professor)",
+                                "correctAnswer": "Таа е професорка.",
+                                "options": [
+                                    "Таа е професорка.",
+                                    "Таа е професор."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

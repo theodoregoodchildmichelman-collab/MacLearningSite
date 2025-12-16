@@ -60,7 +60,9 @@ const Dashboard = ({ onStartLesson }) => {
                                             <Play className="w-7 h-7 ml-0.5 fill-current" />
                                         </div>
                                         <div className="flex flex-col text-left">
-                                            <span className="text-sm font-bold text-blue-200 uppercase tracking-wider">Demo Chapter</span>
+                                            <span className="text-sm font-bold text-blue-200 uppercase tracking-wider">
+                                                {chapter.id === 26 ? "Demo Chapter" : `Chapter ${chapter.id}`}
+                                            </span>
                                             <span className="font-bold text-3xl leading-none">
                                                 {chapter.title}
                                             </span>

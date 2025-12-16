@@ -1,0 +1,101 @@
+{
+    "lessonModule": {
+        "id": "lesson_23",
+        "title": "Chapter 23",
+        "subtitle": "[Macedonian Title]",
+        "proficiencyLevel": "Beginner/Intermediate",
+        "pages": [
+            {
+                "pageNumber": 1,
+                "title": "Page Title",
+                "content": [
+                    {
+                        "type": "dialogue",
+                        "title": "Dialogue Title",
+                        "lines": [
+                            {
+                                "speaker": "Person A",
+                                "mk": "Macedonian text",
+                                "en": "English text",
+                                "audio_id": "optional_audio_ref"
+                            },
+                            {
+                                "speaker": "Person B",
+                                "mk": "Response text",
+                                "en": "English response",
+                                "audio_id": "optional_audio_ref"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "grammar_box",
+                        "title": "Grammar Concept",
+                        "items": [
+                            {
+                                "mk": "Macedonian Text",
+                                "en": "English Explanation"
+                            }
+                        ],
+                        "rows": [
+                            {
+                                "mk": "Word",
+                                "us": "Meaning",
+                                "al": "Alternative/Note"
+                            }
+                        ],
+                        "example": {
+                            "mk": "Example Sentence",
+                            "en": "Translation"
+                        }
+                    },
+                    {
+                        "type": "quiz",
+                        "title": "Activity Title",
+                        "questions": [
+                            "Question 1 text?",
+                            "Question 2 text?"
+                        ],
+                        "vocabulary": [
+                            {
+                                "mk": "CorrectWord",
+                                "en": "CorrectMeaning"
+                            },
+                            {
+                                "mk": "Distractor1",
+                                "en": "Wrong"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "match_pairs",
+                        "title": "Vocabulary Matching",
+                        "instruction": "Match the terms to their definitions.",
+                        "items": [
+                            {
+                                "id": "1",
+                                "term": "Apple",
+                                "definition": "Јаболко"
+                            },
+                            {
+                                "id": "2",
+                                "term": "Bread",
+                                "definition": "Леб"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "flashcards",
+                        "title": "Vocabulary Review",
+                        "vocabData": [
+                            {
+                                "mk": "Збор",
+                                "en": "Word",
+                                "example": "Пример реченица."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

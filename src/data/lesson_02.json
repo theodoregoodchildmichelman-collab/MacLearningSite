@@ -2,46 +2,308 @@
     "lesson_meta": {
         "id": 2,
         "title_mk": "ШТО СТЕ ПО ПРОФЕСИЈА?",
-        "title_en": "What is your profession?",
-        "page_start": 11
+        "title_en": "What is your profession?"
     },
-    "dialogues": [],
-    "vocabulary": [
+    "pages": [
         {
-            "mk_word": "Професор (m) / Професорка (f)",
-            "en_definition": "Professor",
-            "part_of_speech": "noun",
-            "gender": "m/f",
-            "plural_form": "Професори"
+            "page_number": 11,
+            "content": [
+                {
+                    "id": "1",
+                    "title": "Introduction",
+                    "type": "dialogue",
+                    "content": {
+                        "lines": [
+                            {
+                                "speaker": "Speaker A",
+                                "mk": "Добар ден! Јас се викам Игор. Како се викате вие?",
+                                "en": "Good day! My name is Igor. What is your name?"
+                            },
+                            {
+                                "speaker": "Speaker B",
+                                "mk": "Добар ден! Јас се викам Лидија. Мило ми е!",
+                                "en": "Good day! My name is Lidija. Nice to meet you!"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "1.1",
+                    "title": "Exercise 1.1",
+                    "type": "exercise_text",
+                    "content": {
+                        "instruction": "Зборувајте како Игор и Лидија! Speak like Igor and Lidija!"
+                    }
+                },
+                {
+                    "id": "1.2",
+                    "title": "Exercise 1.2",
+                    "type": "exercise_fill_blank",
+                    "content": {
+                        "instruction": "Complete the dialogue:",
+                        "lines": [
+                            {
+                                "speaker": "A",
+                                "text": "Како се викате?",
+                                "blank": false
+                            },
+                            {
+                                "speaker": "B",
+                                "text": "Јас се викам ________. А како се викате вие?",
+                                "blank": true
+                            },
+                            {
+                                "speaker": "A",
+                                "text": "Јас се викам ________. Од каде сте вие?",
+                                "blank": true
+                            },
+                            {
+                                "speaker": "B",
+                                "text": "Јас сум од Македонија, од Скопје. А од каде сте вие?",
+                                "blank": false
+                            },
+                            {
+                                "speaker": "A",
+                                "text": "Јас сум од Америка, од Детроит.",
+                                "blank": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "2_vocab",
+                    "title": "Vocabulary: Professions",
+                    "type": "vocabulary_list",
+                    "content": {
+                        "items": [
+                            {
+                                "word_mk": "Професор",
+                                "word_en": "Professor (m)",
+                                "gender": "m"
+                            },
+                            {
+                                "word_mk": "Професорка",
+                                "word_en": "Professor (f)",
+                                "gender": "f"
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
-            "mk_word": "Волонтер (m) / Волонтерка (f)",
-            "en_definition": "Volunteer",
-            "part_of_speech": "noun",
-            "gender": "m/f",
-            "plural_form": "Волонтери"
+            "page_number": 12,
+            "content": [
+                {
+                    "id": "2.1",
+                    "title": "Exercise 2.1",
+                    "type": "exercise_text",
+                    "content": {
+                        "instruction": "Зборувајте со колегите за вашата професија! Talk with colleagues about your profession!"
+                    }
+                },
+                {
+                    "id": "2.2",
+                    "title": "Exercise 2.2",
+                    "type": "exercise_text",
+                    "content": {
+                        "instruction": "Зборувајте за другите! Talk about others!"
+                    }
+                },
+                {
+                    "id": "2.3",
+                    "title": "Exercise 2.3: Connect",
+                    "type": "matching_triple",
+                    "content": {
+                        "instruction": "Слушајте го текстот и поврзете (Connect)",
+                        "columns": {
+                            "names": [
+                                "Гоце",
+                                "Радмила",
+                                "Мајкл",
+                                "Џесика"
+                            ],
+                            "locations": [
+                                "Бостон",
+                                "Скопје",
+                                "Њујорк",
+                                "Велес"
+                            ],
+                            "professions": [
+                                "Специјален едукатор",
+                                "Професор по англиски јазик",
+                                "Професорка по македонски јазик",
+                                "Младински работник"
+                            ]
+                        },
+                        "correct_matches": []
+                    }
+                },
+                {
+                    "id": "2.4",
+                    "title": "Exercise 2.4",
+                    "type": "dialogue",
+                    "content": {
+                        "lines": [
+                            {
+                                "speaker": "A",
+                                "mk": "Од каде е Гоце?",
+                                "en": "Where is Goce from?"
+                            },
+                            {
+                                "speaker": "B",
+                                "mk": "Гоце е од Скопје.",
+                                "en": "Goce is from Skopje."
+                            },
+                            {
+                                "speaker": "A",
+                                "mk": "Што е тој по професија?",
+                                "en": "What is his profession?"
+                            },
+                            {
+                                "speaker": "B",
+                                "mk": "Тој е професор по англиски јазик.",
+                                "en": "He is an English professor."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "2.5",
+                    "title": "Exercise 2.5",
+                    "type": "exercise_text",
+                    "content": {
+                        "instruction": "Комуникативни вежби - Дијалог во парови. Communicative exercises - Dialogue in pairs."
+                    }
+                }
+            ]
         },
         {
-            "mk_word": "Македонец (m) / Македонка (f)",
-            "en_definition": "Macedonian (person)",
-            "part_of_speech": "noun",
-            "gender": "m/f",
-            "plural_form": "Македонеци"
+            "page_number": 13,
+            "content": [
+                {
+                    "id": "3_grammar",
+                    "title": "Grammar",
+                    "type": "grammar_table",
+                    "content": {
+                        "topic": "Verb 'To Be' (Сум) & Questions (Дали)",
+                        "explanation": "Conjugation of 'to be' and forming yes/no questions.",
+                        "table": [
+                            {
+                                "pronoun": "Јас",
+                                "verb": "сум",
+                                "question": "Дали сум јас...?"
+                            },
+                            {
+                                "pronoun": "Ти",
+                                "verb": "си",
+                                "question": "Дали си ти...?"
+                            },
+                            {
+                                "pronoun": "Тој/Таа",
+                                "verb": "е",
+                                "question": "Дали е тој/таа...?"
+                            },
+                            {
+                                "pronoun": "Ние",
+                                "verb": "сме",
+                                "question": "Дали сме ние...?"
+                            },
+                            {
+                                "pronoun": "Вие",
+                                "verb": "сте",
+                                "question": "Дали сте вие...?"
+                            },
+                            {
+                                "pronoun": "Тие",
+                                "verb": "се",
+                                "question": "Дали се тие...?"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "3.1",
+                    "title": "Exercise 3.1",
+                    "type": "exercise_list",
+                    "content": {
+                        "instruction": "Прашувајте во парови (Ask in pairs)",
+                        "questions": [
+                            "Дали сте вие професор?",
+                            "Дали сте вие Македонци?",
+                            "Дали се тие Американци?",
+                            "Дали се тие волонтери на Мировен корпус?",
+                            "Дали е тој специјален едукатор?",
+                            "Дали сум јас Американка?",
+                            "Дали е таа Македонка?",
+                            "Дали сме ние Албанци?"
+                        ]
+                    }
+                },
+                {
+                    "id": "3.2",
+                    "title": "Exercise 3.2",
+                    "type": "exercise_text",
+                    "content": {
+                        "instruction": "Напишете прашања! Write questions for the corresponding answers."
+                    }
+                },
+                {
+                    "id": "3.3",
+                    "title": "Exercise 3.3",
+                    "type": "dialogue",
+                    "content": {
+                        "lines": [
+                            {
+                                "speaker": "Ivana",
+                                "mk": "Јас се викам Ивана.",
+                                "en": "My name is Ivana."
+                            },
+                            {
+                                "speaker": "?",
+                                "mk": "Не, не сум Американка.",
+                                "en": "No, I am not American."
+                            },
+                            {
+                                "speaker": "?",
+                                "mk": "Од Скопје, од Македонија.",
+                                "en": "From Skopje, from Macedonia."
+                            },
+                            {
+                                "speaker": "?",
+                                "mk": "Не, не сум специјален едукатор. Професорка по англиски јазик.",
+                                "en": "No, not a special educator. English professor."
+                            },
+                            {
+                                "speaker": "?",
+                                "mk": "Добро, а вие?",
+                                "en": "Good, and you?"
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
-            "mk_word": "Американец (m) / Американка (f)",
-            "en_definition": "American (person)",
-            "part_of_speech": "noun",
-            "gender": "m/f",
-            "plural_form": "Американеци"
-        },
-        {
-            "mk_word": "Специјален едукатор (m) / Специјален едукатор (f)",
-            "en_definition": "Special Educator",
-            "part_of_speech": "noun",
-            "gender": "m/f",
-            "plural_form": "Специјален едукатори"
+            "page_number": 14,
+            "content": [
+                {
+                    "id": "3.4",
+                    "title": "Exercise 3.4",
+                    "type": "exercise_text",
+                    "content": {
+                        "instruction": "Зборувајте за личностите од сликите (Talk about the people in the pictures). Use: Дали е Американец? Што е по професија? Дали е волонтерка? Од каде е?"
+                    }
+                },
+                {
+                    "id": "culture_corner",
+                    "title": "Culture Corner",
+                    "type": "culture_card",
+                    "content": {
+                        "text": "People might ask you about how much you earned in the US (or here). This is nothing personal, and it’s something that people like to talk about."
+                    }
+                }
+            ]
         }
-    ],
-    "grammar_notes": []
+    ]
 }

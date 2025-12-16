@@ -1,19 +1,24 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Sparkles, Volume2 } from 'lucide-react';
 import { callGemini } from '../services/GeminiService';
 
 const Flashcard = ({ vocabData, onOpenSettings }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
     const [isLoadingExample, setIsLoadingExample] = useState(false);
-    // We'll store dynamic examples in a local state map or modify the data if we want persistence during session
-    // For simplicity, we'll just use a local state to override the current card's example if generated
+
+    // We'll store dynamic examples in a local state map
     const [generatedExamples, setGeneratedExamples] = useState({});
 
+    // Guard clause for empty data
+    if (!vocabData || vocabData.length === 0) return <div>No vocabulary data available.</div>;
+
     const currentCard = vocabData[currentIndex];
+
+    // Determine which example to show (generated or static)
     const currentExample = generatedExamples[currentIndex] || {
-        mk: currentCard.example,
-        en: currentCard.exampleEn
+        mk: currentCard.example || "Пример реченица...", // Fallback text
+        en: currentCard.exampleEn || "Example sentence..."
     };
 
     const handleFlip = () => {
@@ -21,7 +26,7 @@ const Flashcard = ({ vocabData, onOpenSettings }) => {
     };
 
     const handleNext = (e) => {
-        e.stopPropagation();
+        e && e.stopPropagation();
         setIsFlipped(false);
         setTimeout(() => {
             setCurrentIndex((prev) => (prev < vocabData.length - 1 ? prev + 1 : 0));
@@ -29,7 +34,7 @@ const Flashcard = ({ vocabData, onOpenSettings }) => {
     };
 
     const handlePrev = (e) => {
-        e.stopPropagation();
+        e && e.stopPropagation();
         setIsFlipped(false);
         setTimeout(() => {
             setCurrentIndex((prev) => (prev > 0 ? prev - 1 : vocabData.length - 1));
@@ -54,7 +59,6 @@ const Flashcard = ({ vocabData, onOpenSettings }) => {
                     }
                 }));
             } else {
-                // Fallback if format isn't perfect
                 setGeneratedExamples(prev => ({
                     ...prev,
                     [currentIndex]: {
@@ -64,29 +68,37 @@ const Flashcard = ({ vocabData, onOpenSettings }) => {
                 }));
             }
         } catch (error) {
-            if (error.message === "No API Key") {
-                onOpenSettings();
-            } else {
-                console.error("Failed to generate example", error);
-            }
+            console.error("Failed to generate example", error);
+            // Optionally notify user
         } finally {
             setIsLoadingExample(false);
         }
     };
 
-    return (
-        <section id="flashcard-section" className="text-center">
-            <h2 className="text-xl font-bold mb-6 text-gray-700 flex items-center justify-center gap-2">
-                Vocabulary Deck
-            </h2>
+    // Helper to render icon or emoji
+    const renderIcon = () => {
+        if (currentCard.icon) {
+            const IconComponent = currentCard.icon;
+            // If it's a React component (function or object)
+            if (typeof IconComponent === 'function' || typeof IconComponent === 'object') {
+                return <IconComponent size={64} className="text-slate-800" strokeWidth={1.5} />;
+            }
+        }
+        // Fallback to emoji
+        return <span className="text-7xl mb-6 transform transition group-hover:scale-110 duration-300">{currentCard.emoji || "📝"}</span>;
+    };
 
+    return (
+        <section id="flashcard-section" className="text-center w-full">
             <div className="relative w-full h-96 perspective-1000 group cursor-pointer" onClick={handleFlip}>
                 <div className={`relative w-full h-full text-center transition-transform duration-500 transform-style-3d shadow-2xl rounded-3xl ${isFlipped ? 'rotate-y-180' : ''}`}>
 
                     {/* FRONT */}
-                    <div className="absolute w-full h-full bg-white rounded-3xl flex flex-col justify-center items-center backface-hidden border-2 border-gray-100">
-                        <span className="text-7xl mb-6 transform transition group-hover:scale-110 duration-300">{currentCard.emoji}</span>
-                        <h3 className="text-5xl font-bold text-gray-800 cyrillic mb-2">{currentCard.mk}</h3>
+                    <div className="absolute w-full h-full bg-white rounded-3xl flex flex-col justify-center items-center backface-hidden border-2 border-gray-100 p-6">
+                        <div className="mb-6 transform transition group-hover:scale-110 duration-300">
+                            {renderIcon()}
+                        </div>
+                        <h3 className="text-4xl font-bold text-gray-800 cyrillic mb-2">{currentCard.mk}</h3>
                         <p className="text-gray-400 mt-6 text-xs font-bold uppercase tracking-widest bg-gray-50 px-3 py-1 rounded-full">Tap to flip</p>
                     </div>
 
@@ -94,13 +106,13 @@ const Flashcard = ({ vocabData, onOpenSettings }) => {
                     <div className="absolute w-full h-full bg-slate-800 text-white rounded-3xl flex flex-col justify-between p-6 backface-hidden rotate-y-180">
                         {/* Top Content */}
                         <div className="mt-4">
-                            <h3 className="text-3xl font-bold mb-1 text-yellow-400">{currentCard.transliteration}</h3>
+                            <h3 className="text-3xl font-bold mb-1 text-yellow-400">{currentCard.transliteration || currentCard.phonetic}</h3>
                             <p className="text-xl text-slate-300 font-medium">{currentCard.en}</p>
                         </div>
 
                         {/* Example Box */}
-                        <div className="bg-slate-700/50 rounded-xl p-4 border border-slate-600 relative overflow-hidden group/example">
-                            <div className="text-[10px] text-slate-400 uppercase font-bold mb-2 tracking-wider flex justify-between items-center">
+                        <div className="bg-slate-700/50 rounded-xl p-4 border border-slate-600 relative overflow-hidden group/example flex-1 flex flex-col justify-center mt-4 mb-2">
+                            <div className="text-[10px] text-slate-400 uppercase font-bold mb-2 tracking-wider flex justify-between items-center absolute top-2 left-4 right-4">
                                 <span>Example</span>
                                 {/* AI Feature Button */}
                                 <button
@@ -117,12 +129,11 @@ const Flashcard = ({ vocabData, onOpenSettings }) => {
                                 </div>
                             )}
 
-                            <p className="cyrillic italic text-lg leading-relaxed text-slate-100">{currentExample.mk}</p>
-                            <p className="text-xs text-slate-400 mt-1">{currentExample.en}</p>
+                            <div className="mt-4">
+                                <p className="cyrillic italic text-lg leading-relaxed text-slate-100">{currentExample.mk}</p>
+                                <p className="text-xs text-slate-400 mt-1">{currentExample.en}</p>
+                            </div>
                         </div>
-
-                        {/* Bottom Spacer */}
-                        <div className="h-2"></div>
                     </div>
                 </div>
             </div>
@@ -135,7 +146,7 @@ const Flashcard = ({ vocabData, onOpenSettings }) => {
                 >
                     <ArrowLeft className="w-6 h-6" />
                 </button>
-                <span className="text-sm font-medium text-gray-400">
+                <span className="text-sm font-medium text-slate-500 bg-white px-3 py-1 rounded-full shadow-sm">
                     {currentIndex + 1} / {vocabData.length}
                 </span>
                 <button

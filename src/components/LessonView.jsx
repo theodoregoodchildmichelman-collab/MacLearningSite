@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { LessonService } from '../services/LessonService';
 import LessonVocabulary from './LessonVocabulary';
+import BookLessonView from './BookLessonView';
 
 import LessonDialogue from './LessonDialogue';
 import Quiz from './Quiz';
@@ -9,7 +10,14 @@ import InteractiveVocabularyScript from './InteractiveVocabularyScript'; // Keep
 import InteractiveScenario from './InteractiveScenario';
 import SlangCards from './SlangCards';
 
-const LessonView = ({ lessonId = 'lesson_26', onBack }) => {
+import { useParams } from 'react-router-dom';
+
+const LessonView = ({ onBack }) => {
+    const { id } = useParams();
+    const lessonId = id ? `lesson_${id.padStart(2, '0')}` : 'lesson_26'; // Default or handle ID format
+    // Note: chapters.json has integer IDs (1, 2...), but service expects 'lesson_01'.
+    // Let's normalize the ID.
+
     const [lesson, setLesson] = useState(null);
     const [loading, setLoading] = useState(true);
     const [isQuizActive, setIsQuizActive] = useState(false);
@@ -74,6 +82,11 @@ const LessonView = ({ lessonId = 'lesson_26', onBack }) => {
 
     if (!lesson) return <div className="p-8 text-center text-red-500">Lesson not found.</div>;
 
+    // Route to Book View if structure is 'book'
+    if (lesson.structure === 'book') {
+        return <BookLessonView lesson={lesson} />;
+    }
+
     if (isQuizActive && quizData) {
         return (
             <div className="min-h-screen bg-slate-50 py-8 px-4">
@@ -96,9 +109,9 @@ const LessonView = ({ lessonId = 'lesson_26', onBack }) => {
     const renderStepContent = () => {
         switch (currentStep) {
             case 0:
-                return <LessonDialogue onNext={handleNext} />;
+                return <LessonDialogue onNext={handleNext} data={lesson.dialogues ? lesson.dialogues[0] : null} />;
             case 1:
-                return <LessonVocabulary onNext={handleNext} />;
+                return <LessonVocabulary onNext={handleNext} data={lesson.vocabulary} />;
             case 2:
                 // Slang + Scenario
                 const slangSection = findSection('slang_cards');

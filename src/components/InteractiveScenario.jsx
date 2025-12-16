@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Send, CheckCircle, XCircle } from 'lucide-react';
 import Button from './ui/Button';
 import Input from './ui/Input';
+import BlurReveal from './BlurReveal';
 
 const InteractiveScenario = ({ data, onComplete }) => {
     const [visibleLines, setVisibleLines] = useState(0);
@@ -164,7 +165,7 @@ const InteractiveScenario = ({ data, onComplete }) => {
                             animate={{ opacity: 1, y: 0 }}
                             className="text-red-500 text-sm mt-2 text-center"
                         >
-                            Try again! Hint: {Array.isArray(currentLine.answers) ? currentLine.answers[0] : currentLine.answer}
+                            Try again! Hint: <BlurReveal>{Array.isArray(currentLine.answers) ? currentLine.answers[0] : currentLine.answer}</BlurReveal>
                         </motion.p>
                     )}
                 </div>
