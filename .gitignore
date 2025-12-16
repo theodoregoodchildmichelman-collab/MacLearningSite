@@ -23,3 +23,15 @@ dist-ssr
 *.sln
 *.sw?
 _backup/
+
+# Environment Inputs
+.env
+.env.*
+!.env.example
+
+# Sensitive Data
+*.rtf
+*.pem
+*.key
+chapter_2_raw_dump.txt
+dump_chapter_2.py
